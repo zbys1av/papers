@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@100&display=swap');
+
+html{
+  max-width: 1440px;
+  margin: auto;
+}
+
+body{
+  font-family: 'Catamaran', sans-serif;
+  width: 100%;
+  margin: 0;
+  align-items: center;
+}
+
+.container{
+  align-items: center;
+  margin: auto;
+}
+
+.header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0px;
+  gap: 322px;
+  width: 1440px;
+  height: 70px;
+  background: #00466F;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  z-index: 0;
+}
+
+.header__logo{
+  display: flex;
+  // flex-direction: row;
+  // justify-content: space-between;
+  align-items: center;
+  padding: 10px 0px 10px 135px;
+  gap: 11.95px;
+  // width: 1440px;
+  height: 70px;
+  background: #00466F;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  z-index: 0;
+}
+
+.header nav li{
+  display: table;
+  height: 100%;
+  float: left;
+  margin-right: 30px;
+  vertical-align: middle;
+}
+
+.header nav a{
+  display: table-cell;
+  vertical-align: middle;
+  color: #ffff;
+  text-decoration: none;
+}
+
+.menu__buttons{
+  display: flex;
+  flex: none;
+  order: 3;
+  flex-grow: 0;
+  z-index: 0;
+}
+
+.start-screen{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  // padding: 60px 135px;
+  gap: 20px;
+  height: 520px;
+  background: linear-gradient(270deg, #298DCC 0%, #004F80 100%);
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+  z-index: 1;
+  margin: 0;
+}
+
+.start-screen h1{
+  width: 670px;
+  height: 165px;
+  font-family: 'Catamaran';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 45px;
+  line-height: 55px;
+  color: #FFFFFF;
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+  margin: 60px 0px 30px 135px;
+}
+
+.highlited-txt{
+  color: #FDC420;
+}
+
+.form-container{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  // padding: 20px;
+  // gap: 15px;
+  width: 670px;
+  height: 135px;
+  background: #00466F;
+  border-radius: 6px;
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+  margin: 0px 25px 130px 135px;
+}
+
+.form-container__text{
+  width: 630px;
+  height: 30px;
+  font-family: 'Catamaran';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #FFFFFF;
+  opacity: 0.5;
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+  margin: 15px auto 20px auto;
+}
+
+.form-container__input{
+  box-sizing: border-box;
+  display: flex;
+  // flex-direction: row;
+  // align-items: flex-start;
+  padding: 15px;
+  gap: 10px;
+  width: 208.5px;
+  height: 50px;
+  background: #F2F9FF;
+  border: 1px solid #E6F2FF;
+  border-radius: 5px;
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+.form-container__form{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  text-align: center;
+  margin: 20px auto 0px auto;
+}
+
+.form-container__start-btn{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  // padding: 15px 30px;
+  // gap: 10px;
+  width: 193px;
+  height: 50px;
+  background: #FF7800;
+  border-radius: 5px;
+  // flex: none;
+  order: 2;
+  flex-grow: 0;
+  text-transform: uppercase;
+  color: #ffff;
+}
+
+.start-screen__owl-img{
+  display: flex;
+  width: 480px;
+  height: 400px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin: 60px 135px 60px 0px;
+}
+
+.navmidpage{
+  display: flex;
+  // flex-direction: row;
+  // align-items: flex-start;
+  justify-content: space-between;
+  padding: 0px 135px 0px ;
+  gap: 35px;
+  height: 70px;
+  background: #E6F2FF;
+  flex: none;
+  order: 2;
+  align-self: stretch;
+  flex-grow: 0;
+  z-index: 2;
+
+  &__button{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 55px;
+  }
+
+  a{
+    margin: 10px 0 0 0;
+    text-decoration: none;
+    font-family: 'Catamaran';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    // line-height: 15px;
+    color: #00466F;
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+  }
+
+  img{
+    margin: 15px 0 0 0;
+  }
+}
