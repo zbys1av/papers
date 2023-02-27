@@ -2,150 +2,119 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <title>Webpack Starter with SCSS and Dev Server</title>
+    <title>PapersOwl</title>
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <div class="container">
 
+      <header class="header">
+        <div class="container">
+          <div class="header__box">
+            <div class="header__logo">
+              <img src="images/owl-logo.svg" alt="logo">
+            </div>
+            <nav class="header__menu menu">
+              <ul class="menu__items">
+                <!--  (li.menu__item>a.menu__link)*5 -->
+                <li class="menu__item menu__item--dropdown"><a href="#" class="menu__link">Service</a></li>
+                <li class="menu__item menu__item--dropdown"><a href="#" class="menu__link">Writing Tools</a></li>
+                <li class="menu__item"><a href="#" class="menu__link">How it Works</a></li>
+                <li class="menu__item"><a href="#" class="menu__link">Support</a></li>
+                <li class="menu__item"><a href="#" class="menu__link">About Us</a></li>
+              </ul>
 
-      <div class="header">
-
-        <div class="header__logo logo">
-          <img src="images/owl-logo.svg" alt="PepersOwl logo" class="logo__img">
-          <img src="images/PapersOwl.svg" alt="PapersOwl" class="logo__txt">
-        </div>
-
-        <nav class="header__navbar menu">
-
-          <ul class="menu__items">
-            <li><a class="menu__item menu__dropdown" href="#">Service</a></li>
-            <li><a class="menu__item menu__dropdown" href="#">Writing Tools</a></li>
-            <li><a class="menu__item" href="#">How it Works</a></li>
-            <li><a class="menu__item" href="#">Support</a></li>
-            <li><a class="menu__item" href="#">About Us</a></li>
-          </ul>
-
-          <div class="menu__buttons">
-            <a class="menu__log-btn" href="#"> 
-              <img class="menu__log-btn img" src="images/Shape.svg" alt="arrow">
-              Log in
-            </a>
-            <a href="#" class="menu__ordernow-btn btn">Order now</a>
+              <div class="menu__buttons">
+                <a class="menu__login" href="#">
+                  <img src="images/shape.svg" alt="arrow">
+                  <span>Log in</span>
+                </a>
+                <a href="#" class="menu__order btn">Order now</a>
+              </div>
+            </nav>
           </div>
-
-        </nav>
-
-      </div>
-
-
+        </div>
+      </header>
 
 
       <div class="start-screen">
-        <div class="start-screen__info">
-
-          <h1 class="start-screen__info_text">Get your professionally-researched and well-written <span class="highlited-txt">Dissertation</span> with PapersOwl</h1>
-          
-          <div class="form-container">
-
-            <div class="form-container__form">
-              <select class="form-container__input select" name="type-of-service" id="service">
-                <option value="" disabled selected hidden>Essay (Any Type)</option>
-                <option value="service-1">service-1</option>
-                <option value="service-1">service-2</option>
-                <option value="service-1">service-3</option>
-              </select>
-              <input class="form-container__input email" placeholder="my@mail.com" type="email" id="email" name="email">
-              <input class="form-container__start-btn" type="submit" value="Let's start now"/>
+        <div class="container">
+          <div class="start-screen__box">
+            <div class="start-screen__info">
+              <h1 class="start-screen__info text">Get your professionally-researched and well-written <span class="highlited-txt">Dissertation</span> with PapersOwl</h1>
+              <div class="form-container">
+                <div class="form-container__form">
+                  <select class="form-container__input select" name="type-of-service" id="service">
+                    <option value="" disabled selected hidden>Essay (Any Type)</option>
+                    <option value="service-1">service-1</option>
+                    <option value="service-1">service-2</option>
+                    <option value="service-1">service-3</option>
+                  </select>
+                  <input class="form-container__input email" placeholder="my@mail.com" type="email" id="email" name="email">
+                  <input class="form-container__start-btn btn" type="submit" value="Let's start now"/>
+                </div>
+                <p class="form-container__text">By clicking “Let's start now”, you agree to our terms of service and privacy policy. We’ll occasionally send you promo and account related emails.</p>
+              </div>
             </div>
-
-            <p class="form-container__text">By clicking “Let's start now”, you agree to our terms of service and privacy policy. We’ll occasionally send you promo and account related emails.</p>
+            <img class="start-screen__owl-img" src="images/owl.svg" alt="PapersOwl's owl">
           </div>
         </div>
-
-        <img class="start-screen__owl-img" src="images/owl.svg" alt="PapersOwl's owl">
-
       </div>
 
       <div class="navmidpage">
-        <div class="navmidpage__button">
-          <img src="images/home-vector.svg" alt="home icon">
-          <a class="navmidpage__button_link" href="#">Home</a>
-        </div>
-        <div class="navmidpage__button">
-          <img src="images/review-vector.svg" alt="review icon">
-          <a class="navmidpage__button_link" href="#">Reviews</a>
-        </div>
-        <div class="navmidpage__button">
-          <img src="images/howworks-vector.svg" alt="hears icon">
-          <a class="navmidpage__button_link" href="#">How It Works</a>
-        </div>
-        <div class="navmidpage__button">
-          <img src="images/pricing-vector.svg" alt="wallet icon">
-          <a class="navmidpage__button_link" href="#">Pricing</a>
-        </div>
-        <div class="navmidpage__button">
-          <img src="images/faq-vector.svg" alt="question icon">
-          <a class="navmidpage__button_link" href="#">FAQ</a>
+        <div class="container">
+          <div class="navmidpage__button--home">
+            <img src="images/home-vector.svg" alt="home icon">
+            <a class="navmidpage__button_link" href="#">Home</a>
+          </div>
+          <div class="navmidpage__button">
+            <img src="images/review-vector.svg" alt="review icon">
+            <a class="navmidpage__button_link" href="#">Reviews</a>
+          </div>
+          <div class="navmidpage__button">
+            <img src="images/howworks-vector.svg" alt="hears icon">
+            <a class="navmidpage__button_link" href="#">How It Works</a>
+          </div>
+          <div class="navmidpage__button">
+            <img src="images/pricing-vector.svg" alt="wallet icon">
+            <a class="navmidpage__button_link" href="#">Pricing</a>
+          </div>
+          <div class="navmidpage__button">
+            <img src="images/faq-vector.svg" alt="question icon">
+            <a class="navmidpage__button_link" href="#">FAQ</a>
+          </div>
         </div>
       </div>
 
       <div class="rating">
-        <div class="rating__website">
-          <img class="rating__website_icon" src="#" alt="website icon">
-          <a class="rating__website_link" href="#">Papersowl</a>
-          <p class="rating__website_points">4.7/5</p>
-        </div>
-        <div class="rating__website">
-          <img class="rating__website_icon" src="#" alt="website icon">
-          <a class="rating__website_link" href="#">Papersowl</a>
-          <p class="rating__website_points">4.7/5</p>
-        </div>
-        <div class="rating__website">
-          <img class="rating__website_icon" src="#" alt="website icon">
-          <a class="rating__website_link" href="#">Papersowl</a>
-          <p class="rating__website_points">4.7/5</p>
-        </div>
-      </div>
-
-      <div class="chose-writer">
-        <h2 class="chose-writer__text">Chose your writer</h2>
-        <div class="chose-writer__writers">
-          <div class="chose-writers__writers_writer-card">
-            <div class="chose-writers__writers_writer-card_header">
-              <img class="chose-writers__writers_writer-card_header_pic" src="#" alt="writer's picture">
-              <p class="chose-writers__writers_writer-card_header_name">Dr.Mumbo</p>
-              <p class="chose-writers__writers_writer-card_header_complete-orders">Completed orders: 497</p>
-              <p class="chose-writers__writers_writer-card_header_rating">4.9 (472)</p>
+        <div class="container">
+          <div class="rating__website">
+            <img class="rating__website--icon" src="images/pprsowl-logo.svg" alt="papersowl icon">
+            <div class="rating__website--rating">
+              <a class="rating__website--link" href="#">Papersowl</a>
+              <img src="images/stars-papersowl.svg" alt="rating stars">
             </div>
-            <p class="chose-writers__writers_writer-card_essay-topic">Pros and Cons of Distance Education</p>
-            <div class="chose-writers__writers_writer-card_essay">
-              <div class="chose-writers__writers_writer-card_essay_info">
-                <p class="chose-writers__writers_writer-card_essay_info_main">Paper Type:</p>
-                <p class="chose-writers__writers_writer-card_essay_info_second">Essay (Any Type)</p>
-              </div>
-              <div class="chose-writers__writers_writer-card_essay_info">
-                <p class="chose-writers__writers_writer-card_essay_info_main">Subject:</p>
-                <p class="chose-writers__writers_writer-card_essay_info_second">English<p>
-              </div>
-              <div class="chose-writers__writers_writer-card_essay_info_style">
-                <div class="chose-writers__writers_writer-card_essay_info_style">
-                  <p class="chose-writers__writers_writer-card_essay_info_main">Style:</p>
-                  <p class="chose-writers__writers_writer-card_essay_info_second">APA</p>
-                </div>
-                <div class="chose-writers__writers_writer-card_essay_info_style">
-                  <p class="chose-writers__writers_writer-card_essay_info_main">Sources:</p>
-                  <p class="chose-writers__writers_writer-card_essay_info_second">2</p>
-                </div>
-              </div>
+            <p class="rating__website--points">4.7/5</p>
+          </div>
+  
+          <div class="rating__website">
+            <img class="rating__website--icon" src="images/sitejabber.svg" alt="Sitejabber icon">
+            <div class="rating__website--rating">
+              <a class="rating__website--link" href="#">Sitejabber</a>
+              <img src="images/stars-sitejabber.svg" alt="rating stars">
             </div>
-            <div class="chose-writers__writers_writer-card_button">
-              <a href="#" class="chose-writers__writers_writer-card_button_btn">Hire Writer</a>
+            <p class="rating__website--points">4.7/5</p>
+          </div>
+  
+          <div class="rating__website">
+            <img class="rating__website--icon" src="images/reviews-io.svg" alt="website icon">
+            <div class="rating__website--rating">
+              <a class="rating__website--link" href="#">Reviews.io</a>
+              <img src="images/stars-reviewsio.svg" alt="rating stars">
             </div>
+            <p class="rating__website--points">4.7/5</p>
           </div>
         </div>
       </div>
 
-    </div>
   </body>
 </html>
