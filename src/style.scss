@@ -497,8 +497,6 @@ body{
 
 .reviews{
   background: #F2F9FF;
-  height: 570px;
-
 
   .container{
     align-items: center;
@@ -508,7 +506,7 @@ body{
     display: flex;
     justify-content: space-around;
     flex-direction: column;
-    background: #F2F9FF;
+    // background: #F2F9FF;
   }
 
   &__user{
@@ -594,4 +592,87 @@ body{
   &__order{
     margin: 30px 0 60px 0;
   }
+}
+
+.how-to{
+
+  .title{
+    margin: 60px 0 0 0;
+  }
+
+  &__steps{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0 30px 0;
+  }
+
+  &__step{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 15px;
+    width: 270px;
+    // height: 280px;
+    text-align: center;
+  }
+
+  p{
+    margin: 0;
+  }
+
+  &__find-wr{
+    display: flex;
+    margin: 0 auto 75px auto;
+  }
+}
+
+.payments{
+  display: flex;
+  flex-direction: row;
+  background: linear-gradient(270deg, #298DCC 0%, #004F80 100%);
+
+  .container{
+    display: flex;
+    max-width: 1440px;
+    flex-direction: row;
+    // justify-content: space-between;
+  }
+
+  &__info{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 10px;
+    width: 742px;
+    margin: 60px 108px 60px 0;
+    // height: 135px;
+  }
+
+  &__explore{
+    width: 320px;
+  }
+
+  &__header{
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 40px;
+    color: #FFFFFF;
+    margin: 0;
+  }
+
+  &__text-inf{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25px;
+    color: #FFFFFF;
+    margin: 0;
+  }
+
+  &__methods{
+    margin: 30px 0 0 0;
+    height: 30px;
+  }
+
 }
