@@ -302,21 +302,21 @@ body{
   }
 }
 
+.title{
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #00466F;
+}
+
 .chose-writer{
 
   .writers-list{
     display: flex;
     // gap: 30px;
     justify-content: space-around;
-  }
-
-  &__text{
-    font-weight: 500;
-    font-size: 35px;
-    line-height: 40px;
-    text-align: center;
-    text-transform: uppercase;
-    color: #00466F;
   }
 
   .writer{
@@ -485,4 +485,113 @@ body{
     }
   }
 
+  &__pages{
+    display: block;
+    // justify-content: space-around;
+    margin: 30px auto 60px auto;
+    text-align: center;
+    align-items: center;
+  }
+
+}
+
+.reviews{
+  background: #F2F9FF;
+  height: 570px;
+
+
+  .container{
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    max-width: 1440px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    background: #F2F9FF;
+  }
+
+  &__user{
+    gap: 5px;
+  }
+
+  &__user-id{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 15px;
+    text-align: center;
+    color: #00466F;
+    margin: 0;
+  }
+
+  &__date{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+    color: #ACB8BF;
+    margin: 0;
+  }
+
+  &__title{
+    margin: 60px auto 30px auto;
+  }
+
+  .rating{
+    .container{
+      display: flex;
+      flex-direction: row;
+      gap: 80px;
+    }
+  }
+  &__user-review{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 40px;
+    gap: 20px;
+    isolation: isolate;
+    width: 800px;
+    height: 215px;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 15px rgba(0, 70, 111, 0.15);
+    border-radius: 7px;
+  }
+  
+  .review{
+    &__info{
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__rating{
+      display: flex;
+      height: 20px;
+      gap: 16.45px;
+    }
+    
+    &__verified{
+      display: flex;
+      gap: 6.25px;
+    }
+
+    .verified{
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 20px;
+      margin: 0;
+      color: #61AC42;
+    }
+
+    &__text{
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 25px;
+      color: #222526;
+    }
+  }
+
+  &__order{
+    margin: 30px 0 60px 0;
+  }
 }
