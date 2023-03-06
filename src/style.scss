@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@300;400;500;600;700&display=swap');
+
 
 *{
   font-family: 'Catamaran', sans-serif;
@@ -10,6 +11,15 @@ html{
 
 body{
   margin: 0;
+}
+
+.title{
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #00466F;
 }
 
 .container{
@@ -114,7 +124,7 @@ body{
     flex-grow: 0;
   }
 
-  .text{
+  &__title{
     width: 670px;
     height: 165px;
     // font-family: 'Catamaran';
@@ -149,7 +159,6 @@ body{
     &__text{
       width: 630px;
       height: 30px;
-      font-family: 'Catamaran';
       font-style: normal;
       font-weight: 400;
       font-size: 12px;
@@ -177,6 +186,9 @@ body{
       // order: 1;
       align-self: stretch;
       flex-grow: 0;
+      &--select {
+
+      }
     }
   
     &__form{
@@ -204,7 +216,7 @@ body{
   }
 }
 
-.navmidpage{
+.nav-mid-page{
   background: #E6F2FF;
   .container{
     display: flex;
@@ -219,7 +231,6 @@ body{
   }
 
   &__button{
-    // margin-bottom: 10px;
     display: flex;
     width: 220.08px;
     flex-direction: column;
@@ -227,21 +238,17 @@ body{
     align-items: center;
     justify-content: space-between;
     gap: 10px;
+    &--home{
+      margin-top: 15px;
+      display: flex;
+      width: 149.67px;
+      flex-direction: column;
+      border-bottom: 3px solid #1799E5;
+    }
   }
 
-  &__button--home{
-    margin-top: 15px;
-    display: flex;
-    width: 149.67px;
-    // height: 55px;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    gap: 10px;
-    border-bottom: 3px solid #1799E5;
-  }
 
-  a{
+  &__button-link{
     // margin: 10px 0 0 0;
     text-decoration: none;
     font-weight: 700;
@@ -253,24 +260,28 @@ body{
     // flex-grow: 0;
   }
 
-  // img{
-  //   margin: 15px 0 0 0;
-  // }
+
 }
 
 .rating{
 
   .container{
     align-items: center;
-    justify-content: center;
     margin: auto;
     max-width: 1440px;
     display: flex;
     // flex-direction: row;
     justify-content: space-around;
   }
+  
+  &__box {
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
 
-  .rating__website{
+  }
+  
+  &__website{
     display: flex;
     // flex-direction: row;
     align-items: center;
@@ -280,13 +291,13 @@ body{
     // height: 55px;
   }
 
-  .rating__website--icon{
+  &__website--icon{
     padding: 0;
     margin: 0;
     height: 30px;
   }
 
-  .rating__website--link{
+  &__website--link{
     text-decoration: none;
     font-weight: 400;
     font-size: 14px;
@@ -294,7 +305,7 @@ body{
     color: #1799E5;
   }
 
-  .rating__website--points{
+  &__website--points{
     font-weight: 400;
     font-size: 45px;
     line-height: 55px;
@@ -302,188 +313,15 @@ body{
   }
 }
 
-.title{
-  font-weight: 500;
-  font-size: 35px;
-  line-height: 40px;
-  text-align: center;
-  text-transform: uppercase;
-  color: #00466F;
-}
 
-.chose-writer{
 
-  .writers-list{
+.chose-writer {
+  .chose-writer__list{
     display: flex;
     // gap: 30px;
     justify-content: space-around;
   }
 
-  .writer{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 20px;
-    gap: 15px;
-    width: 323.33px;
-    height: 460px;
-    background: #FFFFFF;
-    box-shadow: 0px 2px 15px rgba(0, 70, 111, 0.15);
-    border-radius: 7px;
-
-    &__name-section{
-      display: flex;
-      flex-direction: row;
-      gap: 15px;
-      border-bottom: 1px solid #DFE6EB;
-      padding-bottom: 15px;
-      width: 100%;
-    }
-
-    &__name-section_name{
-      font-weight: 600;
-      font-size: 20px;
-      line-height: 25px;
-      color: #00466F;
-      margin: 0;
-    }
-
-    .compl-order{
-      font-weight: 400;
-      font-size: 14px;
-      line-height: 20px;
-      color: #222526;
-      margin: 0px 5px 0px 0px;
-
-      span{
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 20px;
-        color: #222526;
-      }
-    }
-
-    &__rating-container{
-      display: flex;
-      margin: 0;
-      gap: 10px;
-
-      &_num{
-        display: flex;
-        gap: 5px;
-        margin: 0;
-      }
-    }
-
-    &__rating{
-      font-weight: 400;
-      font-size: 12px;
-      line-height: 15px;
-      color: #00466F;
-      margin: 0;
-    }
-
-    &__num-rating{
-      font-weight: 400;
-      font-size: 12px;
-      line-height: 15px;
-      color: #737B80;
-      margin: 0;
-    }
-
-    &__topic{
-      margin-left: auto;
-      margin-right: auto;
-      font-weight: 700;
-      font-size: 16px;
-      line-height: 25px;
-      color: #00466F;
-    }
-
-    &__essay-info{
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-    }
-
-    &__info-section{
-      padding: 0px;
-      width: 143.33px;
-      height: 35px;
-    }
-
-    &__info-section--double{
-      display: flex;
-      flex-direction: row;
-      align-items: flex-start;
-      padding: 0px;
-      gap: 10px;
-      width: 143.33px;
-      height: 35px;
-    }
-
-    &__essay-style{
-      width: 66.67px;
-      height: 35px;
-    }
-
-    &__essay-src{
-      width: 66.67px;
-      height: 35px;
-    }
-
-    &__hdr-info{
-      font-weight: 400;
-      font-size: 12px;
-      line-height: 15px;
-      color: #ACB8BF;
-      margin: 0;
-    }
-
-    &__main-info{
-      font-weight: 400;
-      font-size: 14px;
-      line-height: 20px;
-      color: #222526;
-      margin: 0;
-    }
-
-    &__essay{
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      
-    }
-
-    &__essay-sect{
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 0px;
-      isolation: isolate;
-      width: 125px;
-      height: 180px;
-
-      // a{
-      //   position: fixed;
-      //   width: 408px;
-      //   height: 135px;
-      //   left: 19.5px;
-      //   bottom: 8px;
-      //   font-weight: 400;
-      //   font-size: 14px;
-      //   // line-height: 20px;
-      //   text-align: center;
-      //   // text-decoration-line: underline;
-      //   color: #1799E5;
-      // }
-    }
-
-    &__btn{
-      width: 283.33px;
-      height: 50px;
-    }
-  }
 
   &__pages{
     display: block;
@@ -494,13 +332,179 @@ body{
   }
 
 }
+.writer{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px;
+  gap: 15px;
+  width: 323.33px;
+  height: 460px;
+  background: #FFFFFF;
+  box-shadow: 0px 2px 15px rgba(0, 70, 111, 0.15);
+  border-radius: 7px;
+
+  &__name-section{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    border-bottom: 1px solid #DFE6EB;
+    padding-bottom: 15px;
+    width: 100%;
+  }
+
+  &__name-section_name{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 25px;
+    color: #00466F;
+    margin: 0;
+  }
+
+
+
+  &__rating-container{
+    display: flex;
+    margin: 0;
+    gap: 10px;
+
+    &_num{
+      display: flex;
+      gap: 5px;
+      margin: 0;
+    }
+  }
+
+  &__rating{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: #00466F;
+    margin: 0;
+  }
+
+  &__num-rating{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: #737B80;
+    margin: 0;
+  }
+
+  &__topic{
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 25px;
+    color: #00466F;
+  }
+
+  &__essay-info{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  &__info-section{
+    padding: 0px;
+    width: 143.33px;
+    height: 35px;
+  }
+
+  &__info-section--double{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 10px;
+    width: 143.33px;
+    height: 35px;
+  }
+
+  &__essay-style{
+    width: 66.67px;
+    height: 35px;
+  }
+
+  &__essay-src{
+    width: 66.67px;
+    height: 35px;
+  }
+
+  &__hdr-info{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: #ACB8BF;
+    margin: 0;
+  }
+
+  &__main-info{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #222526;
+    margin: 0;
+  }
+
+  &__essay{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+  }
+
+  &__essay-sect{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    isolation: isolate;
+    width: 125px;
+    height: 180px;
+
+    // a{
+    //   position: fixed;
+    //   width: 408px;
+    //   height: 135px;
+    //   left: 19.5px;
+    //   bottom: 8px;
+    //   font-weight: 400;
+    //   font-size: 14px;
+    //   // line-height: 20px;
+    //   text-align: center;
+    //   // text-decoration-line: underline;
+    //   color: #1799E5;
+    // }
+  }
+
+  &__btn{
+    width: 283.33px;
+    height: 50px;
+  }
+}
+
+.compl-order{
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #222526;
+  margin: 0px 5px 0px 0px;
+
+  span{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #222526;
+  }
+}
 
 .reviews{
   background: #F2F9FF;
 
   .container{
     align-items: center;
-    justify-content: center;
     margin: auto;
     max-width: 1440px;
     display: flex;
@@ -535,13 +539,7 @@ body{
     margin: 60px auto 30px auto;
   }
 
-  .rating{
-    .container{
-      display: flex;
-      flex-direction: row;
-      gap: 80px;
-    }
-  }
+
   &__user-review{
     display: flex;
     flex-direction: row;
@@ -984,20 +982,20 @@ body{
 }
 
 .order{
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  align-items: flex-start;
   padding-top: 60px;
   padding-bottom: 60px;
-  gap: 95px;
   background: linear-gradient(270deg, #298DCC 0%, #004F80 100%);
 
-  .container{
-    max-width: 1440px;
-    margin: 0;
-  }
 
+  &__box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__owl {
+    margin-right: 40px;
+    margin-bottom: -80px;
+  }
   &__title{
     margin: 0;
     color: #ffff;
@@ -1079,9 +1077,6 @@ body{
   padding-top: 40px;
   padding-bottom: 60px;
 
-  .container{
-    max-width: 1440px;
-  }
 
   &__top-section{
     display: flex;

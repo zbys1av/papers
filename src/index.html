@@ -7,6 +7,10 @@
   </head>
   <body>
 
+
+  <!-- Залоговки тегами h1,h2,h3....  -->
+
+
       <header class="header">
         <div class="container">
           <div class="header__box">
@@ -35,23 +39,22 @@
         </div>
       </header>
 
-
       <div class="start-screen">
         <div class="container">
           <div class="start-screen__box">
             <div class="start-screen__info">
-              <h1 class="start-screen__info text">Get your professionally-researched and well-written <span class="highlited-txt">Dissertation</span> with PapersOwl</h1>
+              <h1 class="start-screen__title">Get your professionally-researched and well-written <span class="highlited-txt">Dissertation</span> with PapersOwl</h1>
               <div class="form-container">
-                <div class="form-container__form">
-                  <select class="form-container__input select" name="type-of-service" id="service">
+                <form class="form-container__form" action="#" >
+                  <select class="form-container__input form-container__input--select" name="type-of-service">
                     <option value="" disabled selected hidden>Essay (Any Type)</option>
                     <option value="service-1">service-1</option>
                     <option value="service-1">service-2</option>
                     <option value="service-1">service-3</option>
                   </select>
-                  <input class="form-container__input email" placeholder="my@mail.com" type="email" id="email" name="email">
+                  <input class="form-container__input form-container__input--email" placeholder="my@mail.com" type="email" name="email">
                   <input class="form-container__start-btn btn" type="submit" value="Let's start now"/>
-                </div>
+                </form>
                 <p class="form-container__text">By clicking “Let's start now”, you agree to our terms of service and privacy policy. We’ll occasionally send you promo and account related emails.</p>
               </div>
             </div>
@@ -60,27 +63,27 @@
         </div>
       </div>
 
-      <div class="navmidpage">
+      <div class="nav-mid-page">
         <div class="container">
-          <div class="navmidpage__button--home">
+          <div class="nav-mid-page__button nav-mid-page__button--home">
             <img src="images/home-vector.svg" alt="home icon">
-            <a class="navmidpage__button_link" href="#">Home</a>
+            <a class="nav-mid-page__button-link" href="#">Home</a>
           </div>
-          <div class="navmidpage__button">
+          <div class="nav-mid-page__button">
             <img src="images/review-vector.svg" alt="review icon">
-            <a class="navmidpage__button_link" href="#">Reviews</a>
+            <a class="nav-mid-page__button-link" href="#">Reviews</a>
           </div>
-          <div class="navmidpage__button">
+          <div class="nav-mid-page__button">
             <img src="images/howworks-vector.svg" alt="hears icon">
-            <a class="navmidpage__button_link" href="#">How It Works</a>
+            <a class="nav-mid-page__button-link" href="#">How It Works</a>
           </div>
-          <div class="navmidpage__button">
+          <div class="nav-mid-page__button">
             <img src="images/pricing-vector.svg" alt="wallet icon">
-            <a class="navmidpage__button_link" href="#">Pricing</a>
+            <a class="nav-mid-page__button-link" href="#">Pricing</a>
           </div>
-          <div class="navmidpage__button">
+          <div class="nav-mid-page__button">
             <img src="images/faq-vector.svg" alt="question icon">
-            <a class="navmidpage__button_link" href="#">FAQ</a>
+            <a class="nav-mid-page__button-link" href="#">FAQ</a>
           </div>
         </div>
       </div>
@@ -88,6 +91,7 @@
       <div class="rating">
         <div class="container">
           <div class="rating__website">
+            <!-- поправить название классов rating__website--icon -> rating__website-icon -->
             <img class="rating__website--icon" src="images/pprsowl-logo.svg" alt="papersowl icon">
             <div class="rating__website--rating">
               <a class="rating__website--link" href="#">Papersowl</a>
@@ -119,10 +123,11 @@
       <div class="chose-writer">
         <div class="container">
           <p class="chose-writer__title title">Chose your writer</p>
-          <div class="writers-list">
+          <div class="chose-writer__list">
             <div class="writer">
-
               <div class="writer__name-section">
+
+                <!-- поправить название классов writer__name-section_picture -> writer__picture -->
                 <div class="writer__name-section_picture">
                   <img src="images/dr-mumbo.svg" alt="Dr. Mumbo's profile pic">
                 </div>
@@ -283,7 +288,7 @@
   
             </div>
           </div>
-          <img class="chose-writer__pages" src="images/dots.svg" alt="">
+          <img class="chose-writer__pages" src="images/dots.svg" alt="icon">
         </div>
       </div>
 
@@ -293,8 +298,9 @@
           <p class="reviews__title title">What our current customers say</p>
           <!-- rating section -->
           <div class="rating">
-            <div class="container">
+            <div class="rating__box">
               <div class="rating__website">
+                <!-- поправить название классов rating__website--icon -> rating__website-icon -->
                 <img class="rating__website--icon" src="images/pprsowl-logo.svg" alt="papersowl icon">
                 <div class="rating__website--rating">
                   <a class="rating__website--link" href="#">Papersowl</a>
@@ -550,30 +556,34 @@
 
       <div class="order">
         <div class="container">
-          <div class="order__text-sec">
-            <p class="order__title title">Why wait? Place and <span>order right now!</span></p>
-            <p class="order__text">Just fill out the form, press the button, and have no worries!</p>
-          </div>
-          <div class="form-container">
-            <div class="form-container__form">
-              <select class="form-container__input select" name="type-of-service" id="service">
-                <option value="" disabled selected hidden>Essay (Any Type)</option>
-                <option value="service-1">service-1</option>
-                <option value="service-1">service-2</option>
-                <option value="service-1">service-3</option>
-              </select>
-              <input class="form-container__input email" placeholder="my@mail.com" type="email" id="email" name="email">
-              <input class="form-container__start-btn btn" type="submit" value="Let's start now"/>
-            </div>
-            <p class="form-container__text">By clicking “Let's start now”, you agree to our terms of service and privacy policy.
-               We’ll occasionally send you promo and account related emails.</p>
+          <div class="order__box">
+              <img class="order__owl" src="images/smaller-owl.svg" alt="owl">
+              <div class="order__info">
+                <div class="order__text-sec">
+                  <p class="order__title title">Why wait? Place and <span>order right now!</span></p>
+                  <p class="order__text">Just fill out the form, press the button, and have no worries!</p>
+                </div>
+                <div class="form-container">
+                  <div class="form-container__form">
+                    <select class="form-container__input select" name="type-of-service">
+                      <option value="" disabled selected hidden>Essay (Any Type)</option>
+                      <option value="service-1">service-1</option>
+                      <option value="service-1">service-2</option>
+                      <option value="service-1">service-3</option>
+                    </select>
+                    <input class="form-container__input email" placeholder="my@mail.com" type="email"  name="email">
+                    <input class="form-container__start-btn btn" type="submit" value="Let's start now"/>
+                  </div>
+                  <p class="form-container__text">By clicking “Let's start now”, you agree to our terms of service and privacy policy.
+                    We’ll occasionally send you promo and account related emails.</p>
+                </div>
+              </div>
           </div>
         </div>
       </div>
 
       <div class="footer">
         <div class="container">
-          <img class="footer__owl" src="images/smaller-owl.svg" alt="owl">
           <div class="footer__top-section">
             <div class="footer__find-us">
               <p class="footer__text">Find us:</p>
