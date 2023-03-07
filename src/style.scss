@@ -3,6 +3,7 @@
 
 *{
   font-family: 'Catamaran', sans-serif;
+  transition: 0.3s;
 }
 
 html{
@@ -13,7 +14,7 @@ body{
   margin: 0;
 }
 
-.title{
+.ttl{
   font-weight: 500;
   font-size: 35px;
   line-height: 40px;
@@ -57,13 +58,20 @@ body{
   border-color: transparent;
 }
 
+.btn:hover{
+  background: #ff5100;
+  cursor: pointer;
+}
+
 .menu {
   display: flex;
   align-items: center;
+
   &__items {
     display: flex;
     align-items: center;
   }
+
   &__item {
     list-style: none;
     margin-right: 20px;
@@ -105,38 +113,30 @@ body{
 }
 
 .start-screen{
-  // display: flex;
-  // justify-content: center;
   padding-top: 1px;
   background: linear-gradient(270deg, #298DCC 0%, #004F80 100%);
   padding-bottom: 60px;
+
   &__box {
     display: flex;
     margin-top: 60px;
     justify-content: space-between;
   }
+
   &__owl-img{
     display: flex;
-    // width: 480px;
-    // height: 400px;
     flex: none;
-    // order: 1;
     flex-grow: 0;
   }
 
-  &__title{
+  &__ttl{
     width: 670px;
     height: 165px;
-    // font-family: 'Catamaran';
-    // font-style: normal;
     font-weight: 400;
     font-size: 45px;
     line-height: 55px;
     color: #FFFFFF;
     flex: none;
-    // order: 0;
-    // align-self: stretch;
-    // flex-grow: 0;
   }
 
   .highlited-txt{
@@ -147,12 +147,9 @@ body{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    // width: 670px;
-    // height: 135px;
     background: #00466F;
     border-radius: 6px;
     flex: none;
-    // order: 1;
     align-self: stretch;
     flex-grow: 0;
   
@@ -182,10 +179,9 @@ body{
       background: #F2F9FF;
       border: 1px solid #E6F2FF;
       border-radius: 5px;
-      flex: none;
-      // order: 1;
-      align-self: stretch;
+      flex: none;      align-self: stretch;
       flex-grow: 0;
+
       &--select {
 
       }
@@ -208,26 +204,27 @@ body{
       height: 50px;
       background: #FF7800;
       border-radius: 5px;
-      // order: 2;
       flex-grow: 0;
       text-transform: uppercase;
       color: #ffff;
     }
+
+    &__start-btn:hover{
+      background: #ff5100;
+      cursor: pointer;
+    }
+
+
   }
 }
 
 .nav-mid-page{
   background: #E6F2FF;
+
   .container{
     display: flex;
     justify-content: space-between;
-    // width: 1440px;
     height: 70px;
-    // flex: none;
-    // order: 2;
-    // align-self: stretch;
-    // flex-grow: 0;
-    // z-index: 2;
   }
 
   &__button{
@@ -238,6 +235,7 @@ body{
     align-items: center;
     justify-content: space-between;
     gap: 10px;
+
     &--home{
       margin-top: 15px;
       display: flex;
@@ -270,7 +268,6 @@ body{
     margin: auto;
     max-width: 1440px;
     display: flex;
-    // flex-direction: row;
     justify-content: space-around;
   }
   
@@ -283,21 +280,19 @@ body{
   
   &__website{
     display: flex;
-    // flex-direction: row;
     align-items: center;
     padding: 0px;
     gap: 10px;
     width: 200px;
-    // height: 55px;
   }
 
-  &__website--icon{
+  &__website-icon{
     padding: 0;
     margin: 0;
     height: 30px;
   }
 
-  &__website--link{
+  &__website-link{
     text-decoration: none;
     font-weight: 400;
     font-size: 14px;
@@ -305,7 +300,7 @@ body{
     color: #1799E5;
   }
 
-  &__website--points{
+  &__website-points{
     font-weight: 400;
     font-size: 45px;
     line-height: 55px;
@@ -313,25 +308,23 @@ body{
   }
 }
 
-
-
 .chose-writer {
+
   .chose-writer__list{
     display: flex;
-    // gap: 30px;
     justify-content: space-around;
   }
 
 
   &__pages{
     display: block;
-    // justify-content: space-around;
     margin: 30px auto 60px auto;
     text-align: center;
     align-items: center;
   }
 
 }
+
 .writer{
   display: flex;
   flex-direction: column;
@@ -353,7 +346,7 @@ body{
     width: 100%;
   }
 
-  &__name-section_name{
+  &__name{
     font-weight: 600;
     font-size: 20px;
     line-height: 25px;
@@ -361,18 +354,17 @@ body{
     margin: 0;
   }
 
-
-
   &__rating-container{
     display: flex;
     margin: 0;
     gap: 10px;
 
-    &_num{
+    &__num{
       display: flex;
       gap: 5px;
       margin: 0;
     }
+    
   }
 
   &__rating{
@@ -464,20 +456,17 @@ body{
     width: 125px;
     height: 180px;
 
-    // a{
-    //   position: fixed;
-    //   width: 408px;
-    //   height: 135px;
-    //   left: 19.5px;
-    //   bottom: 8px;
-    //   font-weight: 400;
-    //   font-size: 14px;
-    //   // line-height: 20px;
-    //   text-align: center;
-    //   // text-decoration-line: underline;
-    //   color: #1799E5;
-    // }
   }
+
+
+    // Пробував розмістити нижче використовуючи від'ємне значення, але щось не получалося (взагалі ніяк не реагувало, а хром взагалі 
+    // писав, що неправильне значення тегу
+
+    &__sample{
+      position: absolute;
+      margin-top: 145px;
+      color: #1799E5;
+    }
 
   &__btn{
     width: 283.33px;
@@ -535,7 +524,7 @@ body{
     margin: 0;
   }
 
-  &__title{
+  &__ttl{
     margin: 60px auto 30px auto;
   }
 
@@ -594,7 +583,7 @@ body{
 
 .how-to{
 
-  .title{
+  .ttl{
     margin: 60px 0 0 0;
   }
 
@@ -626,15 +615,13 @@ body{
 }
 
 .payments{
-  // display: flex;
-  // flex-direction: row;
   background: linear-gradient(270deg, #298DCC 0%, #004F80 100%);
 
   .container{
     display: flex;
     max-width: 1440px;
     flex-direction: row;
-    // justify-content: space-between;
+    justify-content: space-between;
   }
 
   &__info{
@@ -712,24 +699,14 @@ body{
 }
 
 .demo{
-  display: flex;
-  // flex-direction: row;
-  // align-items: center;
-  // padding: 60px 135px;
-  // gap: 110px;
-  // width: 1440px;
   height: 470px;
   background: #FFFFFF;
 
   .container{
     display: flex;
     max-width: 1440px;
-    gap: 110px;
-    justify-content: space-evenly;
-    // margin-left: 0;
-    // margin-right: 0;
-    // flex-direction: row;
-    // justify-content: space-between;
+    padding: 60px 0 60px 0;
+    justify-content: space-between;
   }
 
   &__info{
@@ -776,7 +753,7 @@ body{
     max-width: 1440px;
   }
 
-  &__title{
+  &__ttl{
     font-weight: 500;
     font-size: 35px;
     line-height: 40px;
@@ -811,12 +788,8 @@ body{
 }
 
 .activity{
-  // display: flex;
-  // flex-direction: column;
-  // align-items: center;
   padding-top: 60px;
   gap: 60px;
-  // width: 1440px;
   height: 430px;
   background: #F2F9FF;
 
@@ -828,16 +801,14 @@ body{
     font-weight: 400;
     font-size: 120px;
     line-height: 100px;
-    // text-align: center;
     color: #00466F;
     margin: 0;
   }
 
-  &__section-title--finished{
+  &__section-ttl--finished{
     font-weight: 400;
     font-size: 45px;
     line-height: 55px;
-    // text-align: center;
     color: #1B99E5;
     margin: 0;
   }
@@ -867,7 +838,7 @@ body{
     margin: 0;
   }
 
-  &__section-title{
+  &__section-ttl{
     font-weight: 400;
     font-size: 20px;
     line-height: 25px;
@@ -911,7 +882,7 @@ body{
     padding: 15px 30px;
     gap: 10px;
     width: 137px;
-    height: 50px;
+    // height: 50px;
     background: #1799E5;
     border-radius: 7px;
     text-transform: uppercase;
@@ -922,6 +893,12 @@ body{
     border-color: transparent;
     margin: 0 auto;
   }
+
+  &__button:hover{
+    background: #4bbbfb;
+    cursor: pointer;
+  }
+
 }
 
 .faq{
@@ -986,7 +963,6 @@ body{
   padding-bottom: 60px;
   background: linear-gradient(270deg, #298DCC 0%, #004F80 100%);
 
-
   &__box {
     display: flex;
     justify-content: center;
@@ -996,7 +972,7 @@ body{
     margin-right: 40px;
     margin-bottom: -80px;
   }
-  &__title{
+  &__ttl{
     margin: 0;
     color: #ffff;
     text-transform: none;
@@ -1049,7 +1025,7 @@ body{
       margin: 20px auto 0px auto;
     }
   
-    &__start-btn{
+    &__order-btn{
       display: flex;
       flex-direction: row;
       justify-content: center;
@@ -1060,6 +1036,11 @@ body{
       border-radius: 5px;
       text-transform: uppercase;
       color: #ffff;
+    }
+
+    &__order-btn:hover{
+      background: #ff5100;
+      cursor: pointer;
     }
   }
 
@@ -1121,8 +1102,6 @@ body{
   }
 
   &__add-info{
-    // display: flex;
-    // flex-direction: column;
     align-items: flex-start;
     padding: 0px;
     gap: 40px;
@@ -1183,11 +1162,7 @@ body{
   }
 
   &__about-us{
-    // display: flex;
-    // flex-direction: column;
-    // align-items: flex-start;
     padding: 0px;
-    // gap: 15px;
     width: 262.5px;
     height: 120px;
   }
