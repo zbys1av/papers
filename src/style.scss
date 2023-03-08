@@ -23,6 +23,16 @@ body{
   color: #00466F;
 }
 
+@media screen and (min-width: 321px) and (max-width:768px){
+
+  .ttl{
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 35px;
+  }
+
+}
+
 .container{
   align-items: center;
   margin: auto;
@@ -336,6 +346,7 @@ body{
 
 }
 
+//RATING
 .rating{
 
   .container{
@@ -350,7 +361,6 @@ body{
     display: flex;
     flex-direction: row;
     gap: 80px;
-
   }
   
   &__website{
@@ -383,10 +393,30 @@ body{
   }
 }
 
+@media screen and (min-width: 321px) and (max-width: 768px){
+
+  .rating{
+    &__box{
+      justify-content: space-between;
+      align-items: center;
+      padding: 0px 0px 20px 0px;
+      gap: 30px;
+      width: 720px;
+    }
+
+    &__website{
+      flex-direction: row;
+      width: 204px;
+      height: 55px;
+    }
+  }
+
+}
+
 //CHOOSE WRITER
 .chose-writer {
 
-  .chose-writer__list{
+  &__list{
     display: flex;
     justify-content: space-around;
   }
@@ -433,14 +463,15 @@ body{
   &__rating-container{
     display: flex;
     margin: 0;
-    gap: 10px;
+    gap: 10px;    
+  }
 
-    &__num{
-      display: flex;
-      gap: 5px;
-      margin: 0;
-    }
-    
+  &__num{
+    display: flex;
+    gap: 5px;
+    margin: 0;
+    text-align: center;
+    align-items: center;
   }
 
   &__rating{
@@ -611,6 +642,128 @@ body{
     align-items: flex-start;
     padding: 40px;
     gap: 20px;
+    width: 800px;
+    height: 10px;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 15px rgba(0, 70, 111, 0.15);
+    border-radius: 7px;
+  }
+  
+  .review{
+    &__info{
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__rating{
+      display: flex;
+      height: 20px;
+      gap: 16.45px;
+    }
+    
+    &__verified{
+      display: flex;
+      gap: 6.25px;
+    }
+
+    .verified{
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 20px;
+      margin: 0;
+      color: #61AC42;
+    }
+
+    &__text{
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 25px;
+      color: #222526;
+    }
+  }
+
+  &__order{
+    margin: 30px 0 60px 0;
+  }
+}
+
+//CHOOSE WRITER
+@media screen and (min-width: 321px) and (max-width: 768px){
+  .chose-writer {
+
+    &__list{
+      flex-direction: row;
+      gap: 30px;
+    }
+  
+  }
+
+  .writer{
+    width: 345px;
+
+    &--optional{
+      display: none;
+    }
+  
+    &__rating-container{
+      flex-direction: row;
+      align-items: center;
+      height: 20px;
+    }
+
+    &__num{
+      gap: 5px;
+      margin: 0;
+    }
+  }
+}
+
+.reviews{
+  background: #F2F9FF;
+
+  .container{
+    align-items: center;
+    margin: auto;
+    max-width: 1440px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    // background: #F2F9FF;
+  }
+
+  &__user{
+    gap: 5px;
+  }
+
+  &__user-id{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 15px;
+    text-align: center;
+    color: #00466F;
+    margin: 0;
+  }
+
+  &__date{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+    color: #ACB8BF;
+    margin: 0;
+  }
+
+  &__ttl{
+    margin: 60px auto 30px auto;
+  }
+
+
+  &__user-review{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 40px;
+    gap: 20px;
     isolation: isolate;
     width: 800px;
     height: 215px;
@@ -657,202 +810,17 @@ body{
   }
 }
 
-//CHOSE WRITER
 @media screen and (min-width: 321px) and (max-width: 768px){
-  .chose-writer {
 
-    &__list :nth-child(3){
-      display: none;
-    }
-
-    .chose-writer__list{
-      display: flex;
-      justify-content: space-around;
-    }
-  
-  
-    &__pages{
-      display: block;
-      margin: 30px auto 60px auto;
-      text-align: center;
-      align-items: center;
-    }
-  
-  }
-
-  .writer{
-    width: 345px;
-    background: #FFFFFF;
-    box-shadow: 0px 2px 15px rgba(0, 70, 111, 0.15);
-    border-radius: 7px;
-  
-    &__name-section{
-      display: flex;
-      flex-direction: row;
-      gap: 15px;
-      border-bottom: 1px solid #DFE6EB;
-      padding-bottom: 15px;
-      width: 100%;
-    }
-  
-    &__name{
-      font-weight: 600;
-      font-size: 20px;
-      line-height: 25px;
-      color: #00466F;
-      margin: 0;
-    }
-  
-    &__rating-container{
-      display: flex;
-      margin: 0;
-      gap: 10px;
-  
-      &__num{
-        display: flex;
-        gap: 5px;
-        margin: 0;
-      }
-      
-    }
-  
-    &__rating{
-      font-weight: 400;
-      font-size: 12px;
-      line-height: 15px;
-      color: #00466F;
-      margin: 0;
-    }
-  
-    &__num-rating{
-      font-weight: 400;
-      font-size: 12px;
-      line-height: 15px;
-      color: #737B80;
-      margin: 0;
-    }
-  
-    &__topic{
-      margin-left: auto;
-      margin-right: auto;
-      font-weight: 700;
-      font-size: 16px;
-      line-height: 25px;
-      color: #00466F;
-    }
-  
-    &__essay-info{
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-    }
-  
-    &__info-section{
-      padding: 0px;
-      width: 143.33px;
-      height: 35px;
-    }
-  
-    &__info-section--double{
-      display: flex;
-      flex-direction: row;
-      align-items: flex-start;
-      padding: 0px;
-      gap: 10px;
-      width: 143.33px;
-      height: 35px;
-    }
-  
-    &__essay-style{
-      width: 66.67px;
-      height: 35px;
-    }
-  
-    &__essay-src{
-      width: 66.67px;
-      height: 35px;
-    }
-  
-    &__hdr-info{
-      font-weight: 400;
-      font-size: 12px;
-      line-height: 15px;
-      color: #ACB8BF;
-      margin: 0;
-    }
-  
-    &__main-info{
-      font-weight: 400;
-      font-size: 14px;
-      line-height: 20px;
-      color: #222526;
-      margin: 0;
-    }
-  
-    &__essay{
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-  
-    }
-  
-    &__essay-sect{
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 0px;
-      isolation: isolate;
-      width: 125px;
-      height: 180px;
-  
-    }
-  
-  
-      // Пробував розмістити нижче використовуючи від'ємне значення, але щось не получалося (взагалі ніяк не реагувало, а хром взагалі 
-      // писав, що неправильне значення тегу
-  
-      &__sample{
-        position: absolute;
-        margin-top: 145px;
-        color: #1799E5;
-      }
-  
-    &__btn{
-      width: 283.33px;
-      height: 50px;
-    }
-  }
-  
-  .compl-order{
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 20px;
-    color: #222526;
-    margin: 0px 5px 0px 0px;
-  
-    span{
-      font-weight: 400;
-      font-size: 14px;
-      line-height: 20px;
-      color: #222526;
-    }
-  }
-  
   .reviews{
-    background: #F2F9FF;
+    border-radius: 0px;
   
     .container{
-      align-items: center;
-      margin: auto;
-      max-width: 1440px;
-      display: flex;
-      justify-content: space-around;
-      flex-direction: column;
-      // background: #F2F9FF;
+      max-width: 768px;
     }
   
     &__user{
-      gap: 5px;
+      width: 80px;
     }
   
     &__user-id{
@@ -874,47 +842,27 @@ body{
     }
   
     &__ttl{
-      margin: 60px auto 30px auto;
+      font-weight: 500;
+      font-size: 28px;
+      line-height: 35px;
+      text-align: center;
+      text-transform: uppercase;
     }
   
   
     &__user-review{
-      display: flex;
-      flex-direction: row;
-      align-items: flex-start;
-      padding: 40px;
-      gap: 20px;
-      isolation: isolate;
-      width: 800px;
-      height: 215px;
-      background: #FFFFFF;
-      box-shadow: 0px 2px 15px rgba(0, 70, 111, 0.15);
+      width: 640px;
+      height: 135px;
       border-radius: 7px;
     }
     
     .review{
-      &__info{
-        display: flex;
-        justify-content: space-between;
-      }
-  
-      &__rating{
-        display: flex;
-        height: 20px;
-        gap: 16.45px;
-      }
       
       &__verified{
-        display: flex;
-        gap: 6.25px;
-      }
-  
-      .verified{
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 20px;
-        margin: 0;
-        color: #61AC42;
+        flex-direction: row;
+        align-items: center;
+        gap: 5px;
+        width: 99px;
       }
   
       &__text{
@@ -929,7 +877,9 @@ body{
       margin: 30px 0 60px 0;
     }
   }
+
 }
+
 
 .how-to{
 
