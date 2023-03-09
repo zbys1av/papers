@@ -880,7 +880,6 @@ body{
 
 }
 
-
 .how-to{
 
   .ttl{
@@ -900,7 +899,6 @@ body{
     padding: 0px;
     gap: 15px;
     width: 270px;
-    // height: 280px;
     text-align: center;
   }
 
@@ -911,6 +909,54 @@ body{
   &__find-wr{
     display: flex;
     margin: 0 auto 75px auto;
+  }
+}
+
+@media screen and (min-width: 321px) and (max-width: 768px){
+
+  .how-to{
+
+    .ttl{
+      margin: 60px 0 0 0;
+    }
+  
+    &__steps{
+      display: grid;
+      justify-content: space-around;
+      grid-template: 
+        "a b"  
+        "c d";
+        gap: 30px
+    }
+
+    .section1{
+      grid-area: "a";
+    }
+
+    .section2{
+      grid-area: "b";
+    }
+
+    .section3{
+      grid-area: "c";
+    }
+
+    .section4{
+      grid-area: "d";
+    }
+
+  
+    &__step{
+      width: 270px;
+    }
+  
+    p{
+
+    }
+  
+    &__find-wr{
+
+    }
   }
 }
 
@@ -932,7 +978,6 @@ body{
     gap: 10px;
     width: 742px;
     margin: 60px 108px 60px 0;
-    // height: 135px;
   }
 
   &__explore{
@@ -962,24 +1007,64 @@ body{
 
 }
 
+@media screen and (min-width: 321px) and (max-width: 768px){
+
+  .payments{
+
+    .container{
+      display: flex;
+      flex-direction: column;
+    }
+  
+    &__info{
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 0px;
+      gap: 10px;
+      width: 720px;
+      margin-left: 120px;
+      margin-bottom: 40px;
+    }
+  
+    &__explore{
+      width: 320px;
+    }
+  
+    &__header{
+      width: 720px;
+      height: 40px;
+      font-weight: 400;
+      font-size: 35px;
+      line-height: 40px;
+    }
+  
+    &__text-inf{
+
+    }
+  
+    &__methods{
+      margin: 30px 0 0 0;
+      height: 30px;
+    }
+
+    &__btn{
+      margin-bottom: 30px;
+    }
+  
+  }
+
+}
+
+
+//WHY US? 
 .why-us{
-  // display: flex;
-  // flex-direction: column;
-  // align-items: center;
   padding: 1px;
   gap: 30px;
-  // width: 1440px;
-  // height: 380px;
   background: #F2F9FF;
-  // border-radius: 0px;
-  height: 380px;
-
 
   .container{
-    // display: flex;
     max-width: 1440px;
-    // flex-direction: row;
-    // justify-content: space-between;
   }
 
   &__reasons{
@@ -998,6 +1083,36 @@ body{
   }
 }
 
+@media screen and (min-width: 321px) and (max-width: 768px){
+
+  .why-us{
+  
+    &__reasons{
+      align-items: flex-start;
+      padding: 0px;
+      gap: 20px;
+      width: 720px;
+      height: 450px;
+      display: grid;
+      justify-content: space-around;
+      grid-template: 
+        "a b"
+        "c d";
+      gap: 30px;
+    }
+  
+    &__reason{
+      align-items: center;
+      padding: 0px;
+      gap: 15px;
+      width: 330px;
+    }
+  }
+
+}
+
+
+//DEMO
 .demo{
   height: 470px;
   background: #FFFFFF;
@@ -1044,6 +1159,50 @@ body{
   }
 }
 
+@media screen and (min-width: 321px) and (max-width: 768px){
+
+  .demo{
+    width: 768px;
+    height: auto;
+
+    .container{
+      justify-content: space-around;
+    }
+  
+    &__info{
+      width: 410px;
+    }
+  
+    &__header{
+      width: 410px;
+      font-size: 25px;
+      line-height: 30px;
+  
+      span{
+        color: #1799E5;
+      }
+    }
+  
+    &__text{
+      width: 410px;
+    }
+  
+    &__get-page{
+      padding: 15px 30px;
+    }
+
+    &__picture{
+      margin-left: -10px;
+    }
+
+    &__picture img{
+      width: 280px;
+    }
+  }
+
+}
+
+//ESSAY
 .essay-type{
   display: flex;
   height: 435px;
@@ -1064,11 +1223,7 @@ body{
 
   &__list{
     display: flex;
-    // align-items: center;
     justify-content: space-between;
-    // flex-direction: row;
-    // align-items: flex-start;
-    // padding: 0px;
     gap: 30px;
     width: 970px;
     height: 165px;
@@ -1087,6 +1242,38 @@ body{
   }
 }
 
+@media screen and (min-width: 321px) and (max-width: 768px){
+
+  .essay-type{
+    gap: 30px;
+    width: 768px;
+    border-radius: 0px;
+  
+    .container{
+      max-width: 1440px;
+    }
+  
+    &__ttl{
+      width: 720px;
+      font-size: 28px;
+      line-height: 35px;
+    }
+  
+    &__list{
+      gap: 10px;
+      width: 720px;
+    }
+  
+    &__list-element{
+      width: 200px;
+      height: 25px;
+      font-size: 16px;
+    }
+  }
+
+}
+
+//ACTIVITY
 .activity{
   padding-top: 60px;
   gap: 60px;
@@ -1113,16 +1300,22 @@ body{
     margin: 0;
   }
 
-  &__writers{
-    width: 219px;
-  }
+  &__section{
+    &--writers{
+      width: 219px;
+    }
 
-  &__online-wr{
-    width: 219px;
-  }
+    &--online-wr{
+      width: 219px;
+    }
 
-  &__operators{
-    width: 219px;
+    &--online-wr{
+      width: 219px;
+    }
+
+    &--operators{
+      width: 219px;
+    }
   }
 
   &__score{
@@ -1160,6 +1353,43 @@ body{
   
 }
 
+@media screen and (min-width: 321px) and (max-width: 768px){
+
+  .activity{
+    width: 768px;
+    border-radius: 0px;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    height: auto;
+  
+    &__main-txt--finished{
+      width: 371px;
+    }
+  
+    &__data{
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      justify-content: space-around;
+      align-items: center;
+    }
+  
+    &__additional-data{
+      display: flex;
+    }
+
+    &__section{
+      padding: 10px;
+
+      &--finished{
+        text-align: center;
+      }
+    }
+
+  }
+}
+
+//TEXT SECTION
 .text-sec{
   padding-top: 60px;
   padding-bottom: 60px;
@@ -1182,7 +1412,6 @@ body{
     padding: 15px 30px;
     gap: 10px;
     width: 137px;
-    // height: 50px;
     background: #1799E5;
     border-radius: 7px;
     text-transform: uppercase;
@@ -1201,6 +1430,41 @@ body{
 
 }
 
+@media screen and (min-width: 321px) and (max-width: 768px){
+
+  .text-sec{
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+  
+    &__button{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 15px 30px;
+      gap: 10px;
+      width: 137px;
+      background: #1799E5;
+      border-radius: 7px;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: #ffff;
+      font-weight: 700;
+      font-size: 14px;
+      border-color: transparent;
+      margin: 0 auto;
+    }
+  
+    &__button:hover{
+      background: #4bbbfb;
+      cursor: pointer;
+    }
+  
+  }
+
+}
+
+//FAQ
 .faq{
   padding-bottom: 60px;
   .container{
