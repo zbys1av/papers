@@ -36,14 +36,30 @@ body{
 .container{
   align-items: center;
   margin: auto;
-  max-width: 1440px;
-}
-
-@media screen and (min-width: 321px) and (max-width:768px){
-  .container{
-    max-width: 768px;
+  max-width: 1410px;
+  padding: 0 24px;
+  @media (max-width: 1600px) {
+    max-width: 1200px;
+  }
+  @media (max-width: 1250px) {
+    max-width: 1024px;
+  }
+  @media (max-width: 1050px) {
+    max-width: 950px;
+  }
+  @media (max-width: 992px) {
+    max-width: 750px;
+  }
+  @media (max-width: 767px) {
+    max-width: 450px;
+  }
+  @media (max-width: 480px) {
+    max-width: 100%;
+    padding: 0 15px;
   }
 }
+
+
 
 .header{
   background: #00466F;
@@ -81,6 +97,17 @@ body{
 
 
 // HEADER MENU
+.sub-menu {
+  position: absolute;
+  background: #ffff;
+  padding: 15px;
+  list-style: none;
+  visibility: hidden;
+  opacity: 0;
+  z-index: -9999;
+  transition: 0.3s;
+}
+
 .menu {
   display: flex;
   align-items: center;
@@ -93,6 +120,13 @@ body{
   &__item {
     list-style: none;
     margin-right: 20px;
+    &:hover{
+      .sub-menu {
+        z-index: 9999;
+        opacity: 1;
+        visibility: visible;
+      }
+    }
   }
   &__link {
     font-style: normal;
@@ -155,6 +189,9 @@ body{
     display: flex;
     margin-top: 60px;
     justify-content: space-between;
+    @media (max-width: 1200px) {
+      flex-wrap: wrap;
+    }
   }
 
   &__owl-img{
@@ -1226,7 +1263,9 @@ body{
     justify-content: space-between;
     gap: 30px;
     width: 970px;
-    height: 165px;
+    @media (max-width: 1200px) {
+      width: 100%;
+    }
   }
 
   &__list-element{
@@ -1235,6 +1274,9 @@ body{
     line-height: 25px;
     color: #FFFFFF;
     width: 283.33px;
+    @media (max-width: 1200px) {
+      width: auto;
+    }
   }
 
   &__order-now{
@@ -1531,6 +1573,9 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    @media (max-width: 1200px) {
+      flex-wrap: wrap;
+    }
   }
   &__owl {
     margin-right: 40px;
@@ -1633,6 +1678,9 @@ body{
     height: 130px;  
     margin: 0;
     justify-content: space-between;
+    @media (max-width: 1600px) {
+      max-width: 100%;
+    }
   }
 
   &__text{
@@ -1687,7 +1735,9 @@ body{
     padding: 0px;
     gap: 20px;
     width: 1440px;
-    height: 290px;
+    @media (max-width: 1600px) {
+      max-width: 100%;
+    }
   }
 
   &__links{
