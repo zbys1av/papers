@@ -38,6 +38,7 @@ body{
   padding: 0 24px;
 
   @media (max-width:320px) {
+    padding: 0 15px;
     max-width: 320px;
   }
 }
@@ -332,6 +333,11 @@ body{
       align-self: stretch;
       flex-grow: 0;
       margin: 15px auto 20px auto;
+
+      @media (max-width:320px) {
+        width: 250px;
+        padding: 10px;
+      }
     }
   
     &__input{
@@ -347,9 +353,12 @@ body{
       flex: none;      
       align-self: stretch;
       flex-grow: 0;
-
       &--select {
 
+      }
+
+      @media (max-width:320px) {
+        width: 250px;
       }
     }
   
@@ -359,6 +368,12 @@ body{
       gap: 10px;
       text-align: center;
       margin: 20px auto 0px auto;
+
+      @media (max-width:320px) {
+        flex-direction: column;
+        margin: 0;
+        padding: 20px 20px 0px 20px;
+      }
     }
   
     &__start-btn{
@@ -373,12 +388,17 @@ body{
       flex-grow: 0;
       text-transform: uppercase;
       color: #ffff;
+
+      @media (max-width:320px) {
+        width: 250px;
+      }
     }
 
     &__start-btn:hover{
       background: #ff5100;
       cursor: pointer;
     }
+
   }
 }
 
@@ -444,6 +464,11 @@ body{
 .nav-mid-page{
   background: #E6F2FF;
 
+
+  @media (max-width:320px) {
+    display: none;
+  }
+
   .container{
     display: flex;
     justify-content: space-between;
@@ -494,6 +519,11 @@ body{
     display: flex;
     flex-direction: row;
     gap: 80px;
+
+    @media (max-width: 320px) {
+      gap: 30px;
+      align-items: center;
+    }
   }
   
   &__website{
@@ -502,12 +532,27 @@ body{
     padding: 0px;
     gap: 10px;
     width: 200px;
+
+    @media (max-width:320px) {
+      display: grid;
+      gap: 0;
+      width: 80px;
+      grid-template: 
+        "l w w w"
+        "r r r r"
+        "p p p p";
+    }
   }
 
   &__website-icon{
     padding: 0;
     margin: 0;
     height: 30px;
+
+    @media (max-width:320px) {
+      width: 20px;
+      grid-area: l;
+    }
   }
 
   &__website-link{
@@ -516,6 +561,22 @@ body{
     font-size: 14px;
     line-height: 20px;
     color: #1799E5;
+
+    @media (max-width:320px) {
+      width: 60px;
+      margin: 0;
+      padding: 0;
+      grid-area: w;
+    }
+  }
+
+  &__website-stars{
+
+    @media (max-width: 320px) {
+      width: 62px;
+      margin: 0;
+      grid-area: r;
+    }
   }
 
   &__website-points{
@@ -523,6 +584,16 @@ body{
     font-size: 45px;
     line-height: 55px;
     color: #00466F;
+
+    @media (max-width:320px) {
+      width: 57px;
+      height: 35px;
+      font-size: 28px;
+      line-height: 35px;
+      margin: 0;
+      text-align: center;
+      grid-area: p;
+    }
   }
 }
 
@@ -549,11 +620,23 @@ body{
 //CHOOSE WRITER
 .chose-writer {
 
+  @media (max-width:320px) {
+    padding: 0 15px;
+  }
+
   &__list{
     display: flex;
     justify-content: space-around;
   }
 
+  &__ttl{
+
+    @media (max-width:320px) {
+      font-weight: 500;
+      font-size: 25px;
+      line-height: 30px;
+    }
+  }
 
   &__pages{
     display: block;
@@ -575,6 +658,26 @@ body{
   background: #FFFFFF;
   box-shadow: 0px 2px 15px rgba(0, 70, 111, 0.15);
   border-radius: 7px;
+
+  @media (max-width: 320px) {
+    width: 100%;
+  }
+
+  &--optional{
+
+    @media (max-width:320px) {
+      display: none;
+    }
+  }
+
+  &--optional-2{
+
+    @media (max-width: 320px) {
+      display: none;
+    }
+
+  }
+
 
   &__name-section{
     display: flex;
@@ -684,7 +787,6 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-
   }
 
   &__essay-sect{
@@ -695,12 +797,7 @@ body{
     isolation: isolate;
     width: 125px;
     height: 180px;
-
   }
-
-
-    // Пробував розмістити нижче використовуючи від'ємне значення, але щось не получалося (взагалі ніяк не реагувало, а хром взагалі 
-    // писав, що неправильне значення тегу
 
     &__sample{
       position: absolute;
@@ -711,6 +808,10 @@ body{
   &__btn{
     width: 283.33px;
     height: 50px;
+
+    @media (max-width: 320px) {
+      width: 100%;
+    }
   }
 }
 
@@ -732,6 +833,10 @@ body{
 .reviews{
   background: #F2F9FF;
 
+  @media (max-width: 320px) {
+    padding: 0 10px;
+  }
+
   .container{
     align-items: center;
     margin: auto;
@@ -739,7 +844,6 @@ body{
     display: flex;
     justify-content: space-around;
     flex-direction: column;
-    // background: #F2F9FF;
   }
 
   &__user{
@@ -766,6 +870,13 @@ body{
 
   &__ttl{
     margin: 60px auto 30px auto;
+
+    @media (max-width: 320px) {
+      margin-top: 10x;
+      font-weight: 500;
+      font-size: 25px;
+      line-height: 30px;
+    }
   }
 
 
@@ -861,7 +972,6 @@ body{
     display: flex;
     justify-content: space-around;
     flex-direction: column;
-    // background: #F2F9FF;
   }
 
   &__user{
@@ -903,6 +1013,13 @@ body{
     background: #FFFFFF;
     box-shadow: 0px 2px 15px rgba(0, 70, 111, 0.15);
     border-radius: 7px;
+
+    @media (max-width: 320px) {
+      flex-direction: column;
+      padding: 20px 15px;
+      gap: 20px;
+      width: 100%;
+    }
   }
   
   .review{
