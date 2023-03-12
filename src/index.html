@@ -15,13 +15,27 @@
         <div class="container">
           <div class="header__box">
             <div class="header__logo">
-              <img src="images/owl-logo.svg" alt="logo">
+              <img class="header__logo header__logo--full"src="images/owl-logo.svg" alt="logo">
+              <img class="header__logo header__logo--small" src="images/logo.svg" alt="owl logo">
             </div>
             <nav class="header__menu menu">
               <ul class="menu__items">
                 <!--  (li.menu__item>a.menu__link)*5 -->
                 <li class="menu__item menu__item--dropdown">
                   <a href="#" class="menu__link">Service</a>
+                  <img class="menu__arrow" src="images/arrow.svg" alt="arrow">
+                  <ul class="sub-menu">
+                    <!-- <img class="sub-menu__triangle" src="images/triangle.png" alt="triangle"> -->
+                    <li class="sub-menu__item"><a href="#" class="sub-menu__link">Writing Tools</a></li>
+                    <li class="sub-menu__item"><a href="#" class="sub-menu__link">Support</a></li>
+                    <li class="sub-menu__item"><a href="#" class="sub-menu__link">How it Works</a></li>
+                    <li class="sub-menu__item"><a href="#" class="sub-menu__link">About Us</a></li>
+                    <li class="sub-menu__item"><a href="#" class="sub-menu__link">link</a></li>
+                  </ul>
+                </li>
+                <li class="menu__item menu__item--dropdown">
+                  <a href="#" class="menu__link">Writing Tools</a>
+                  <img class="menu__arrow" src="images/arrow.svg" alt="arrow">
                   <ul class="sub-menu">
                     <li class="sub-menu__item"><a href="#" class="sub-menu__link">Writing Tools</a></li>
                     <li class="sub-menu__item"><a href="#" class="sub-menu__link">Support</a></li>
@@ -30,10 +44,22 @@
                     <li class="sub-menu__item"><a href="#" class="sub-menu__link">link</a></li>
                   </ul>
                 </li>
-                <li class="menu__item menu__item--dropdown"><a href="#" class="menu__link">Writing Tools</a></li>
                 <li class="menu__item"><a href="#" class="menu__link">How it Works</a></li>
                 <li class="menu__item"><a href="#" class="menu__link">Support</a></li>
-                <li class="menu__item"><a href="#" class="menu__link">About Us</a></li>
+                <li class="menu__item menu__item--dropdown">
+                  <a href="#" class="menu__link">About Us</a>
+                  <img class="menu__arrow" src="images/arrow.svg" alt="arrow">
+                  <ul class="sub-menu">
+                    <li class="sub-menu__item"><a href="#" class="sub-menu__link">Writing Tools</a></li>
+                    <li class="sub-menu__item"><a href="#" class="sub-menu__link">Support</a></li>
+                    <li class="sub-menu__item"><a href="#" class="sub-menu__link">How it Works</a></li>
+                    <li class="sub-menu__item"><a href="#" class="sub-menu__link">About Us</a></li>
+                    <li class="sub-menu__item"><a href="#" class="sub-menu__link">link</a></li>
+                  </ul>
+                </li>
+                <li class="menu__item menu__item--button">
+                  <img src="images/mag-glass.svg" alt="magnefing glass">
+                </li>
               </ul>
 
               <div class="menu__buttons">
@@ -42,6 +68,7 @@
                   <span>Log in</span>
                 </a>
                 <a href="#" class="menu__order btn">Order now</a>
+                <img class="menu__burger-m" src="images/burger-menu.svg" alt="burger-menu">
               </div>
             </nav>
           </div>
@@ -67,7 +94,8 @@
                 <p class="form-container__text">By clicking “Let's start now”, you agree to our terms of service and privacy policy. We’ll occasionally send you promo and account related emails.</p>
               </div>
             </div>
-            <img class="start-screen__owl-img" src="images/owl.svg" alt="PapersOwl's owl">
+            <!-- <img srcset="images/owl.svg 768w, images/owl-2.svg 329w" class="start-screen__owl-img"  alt="PapersOwl's owl"> -->
+            <img src="images/owl.svg" class="start-screen__owl-img"  alt="PapersOwl's owl">
           </div>
         </div>
       </div>
